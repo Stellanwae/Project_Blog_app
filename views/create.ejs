@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/head') -%>
+<body>
+    <%- include('layouts/navbar') -%>
+
+    <div class="main">
+        <h1>Be Creative today</h1>
+        <p>Let us get to know you</p>
+        <!-- <button>Get Started!</button> -->
+    </div>
+
+    <div class="create-container">
+        <form action="/posts/store" method="POST" enctype="multipart/form-data">
+            <div>
+                <label>Image</label>
+                <input type="file" id="image" name="image">
+            </div>
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" placeholder="Title">
+            </div>
+
+            <div>
+                <label for="body">Message</label>
+                <textarea rows="5" type="text" name="body" id="body"></textarea>
+            </div>
+            <div>
+                <button type="submit" id="sendMessageButton">Submit</button>
+            </div>
+        </form>        
+
+    </div>
+
+    <%- include('layouts/footer') -%>
+    <%- include('layouts/script') -%>
+</body>
+</html>

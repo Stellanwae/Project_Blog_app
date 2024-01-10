@@ -1,0 +1,147 @@
+body {
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: whitesmoke;
+    top: 0;
+    font-weight: bold;
+    padding: 5px 15px;
+    box-shadow: 0 2px 3px black;
+    font-size: large;
+}
+
+.navbar > .navbar-main  {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar > ul > li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    background-image: url('../img/andyone--WW8jBak7bo-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace ;
+    font-weight: 500px;
+    font-size: larger;
+    color: white;
+}
+
+.main > button {
+    font-family: inherit;
+    background: transparent;
+    color: inherit;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: large;
+
+}
+
+.recent-blogpost-title {
+    margin: 30px;
+}
+
+.blogposts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blogpost-container {
+    width: 40%;
+    max-width: 300px;
+}
+
+.blogpost-container > a {
+    text-decoration: none;
+    color: black;
+}   
+
+.blogpost-container-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    font-size: larger;
+}
+
+.footer-container-head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-container-button > button {
+    background: transparent;
+    color: inherit;
+    border: 2px solid white;
+    padding: 10px 25px;
+    font-family: inherit;
+    font-size: large;
+}
+
+.footer-container-links {
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+/* contact-area */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 30px;
+    gap: 20px;
+
+}
+
+.contact-container > input {
+    line-height: 30px;
+}

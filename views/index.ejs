@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/head') -%>
+<body>
+
+    <%- include('layouts/navbar') -%>
+    <div class="main">
+        <h1>LOREM FLOREM IpSUM YOUR BLOG HERE</h1>
+        <p>Write your heart out and share here!</p>
+        <button><a href="/auth/register">Get Started!</a></button>
+    </div>
+    <div class="will-add sth"></div>
+
+    <div class="recent-blogpost-title">
+        <h1>RECENT BLOG POSTS</h1>
+    </div>
+    <div class="blogposts">
+
+        <% for (i=0; i < blogposts.length; i++) { %>
+        
+        <div class="blogpost-container">
+                <a href="/post/<%= blogposts[i]._id %>">
+                <img class="blogpost-container-img" src="<%= blogposts[i].image %>" alt="">
+                <h1>
+                    <%= blogposts[i].title %>
+                </h1>
+                <p>
+                    <%= blogposts[i].body %>
+                </p>
+                <h4><a href="#"><%= blogposts[i].userid.username %></a> • <%= blogposts[i].datePosted.toDateString() %></h4>
+            </a>
+        </div>
+        <% } %>
+        
+    </div>
+    <%- include('layouts/footer') -%>
+    <%- include('layouts/script') -%>
+</body>
+</html>

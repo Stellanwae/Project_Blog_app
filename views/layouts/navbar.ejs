@@ -1,0 +1,22 @@
+<nav class="navbar">
+    <ul>
+        <li><a href="">LOGO</a></li>
+    </ul>
+    <ul class="navbar-main">
+        <li><a href="/">Home</a></li>
+        <% if(loggedIn){ %>
+        <li><a href="/posts/new">New Post</a></li>
+        <% } %>
+        <!-- <li><a href="/post">Posts</a></li> -->
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/about">About Us</a></li>
+    </ul>
+    <ul>
+        <% if(!loggedIn) { %>
+        <li><a href="/auth/login">Log In</a></li>
+        <% } %>
+        <% if(loggedIn){ %>
+        <li><a href="/auth/logout">Log out</a></li>
+        <% } %>
+    </ul>
+</nav>
