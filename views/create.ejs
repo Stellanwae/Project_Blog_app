@@ -12,10 +12,7 @@
 
     <div class="create-container">
         <form action="/posts/store" method="POST" enctype="multipart/form-data">
-            <div>
-                <label>Image</label>
-                <input type="file" id="image" name="image">
-            </div>
+
             <div>
                 <label for="title">Title</label>
                 <input type="text" name="title" id="title" placeholder="Title">
@@ -24,7 +21,18 @@
             <div>
                 <label for="body">Message</label>
                 <textarea rows="5" type="text" name="body" id="body"></textarea>
+                <script>
+                    $('#body').summernote({
+                    placeholder: 'Your content comes here...',
+                    tabsize: 2,
+                    height: 200
+                    });
+                </script>
             </div>
+            <div>
+                <label>Image</label>
+                <input type="file" id="image" name="image">
+            </div>            
             <div>
                 <button type="submit" id="sendMessageButton">Submit</button>
             </div>
