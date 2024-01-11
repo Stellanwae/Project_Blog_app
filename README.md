@@ -24,7 +24,25 @@ To run the application run `npm run dev`
 
 ## Database setup
 
-`
+```
 Install MongoDB
 Start MongoDB service
-`
+Create a new database
+```
+
+## Acknowledgements
+
+Many thanks to:
+
+- ALX
+- - MongoDB free tiers option
+- Scrimba
+- Greg Lim
+
+## License
+
+This project is MIT licensed
+
+## Author
+
+Stella Nicole Nwae
