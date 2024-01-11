@@ -19,6 +19,7 @@ button {
 h1 {
     margin: 0;
     padding: 0;
+    
 }
 
 .navbar {
@@ -48,8 +49,12 @@ h1 {
     color: black;
 }
 
+.logo {
+    font-family: 'Dancing Script', cursive;
+}
+
 .main {
-    background-image: url('../img/andyone--WW8jBak7bo-unsplash.jpg');
+    background-image: url('../img/guven-gunes-1P1f8zPF4PM-unsplash.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,14 +64,27 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Inconsolata', monospace ;
-    font-weight: 500px;
-    font-size: larger;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800px;
+    text-align: center;
+    
     color: white;
 }
 
+.main > h1 {
+    font-size: 50px;
+}
+
+
+
+
+.main > p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 12px;
+}
+
 .main > button {
-    font-family: inherit;
+    font-family: 'Inconsolata', monospace;
     background: transparent;
     color: inherit;
     border: 2px solid white;
@@ -158,10 +176,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Inconsolata', monospace ;
+    font-family: 'Inconsolata', monospace;
     font-weight: 500px;
     font-size: larger;
     color: white;
+    text-align: center;
+}
+
+.main-about-page > h1 {
+    font-family: 'Dancing Script', cursive;;
 }
 
 .contact-container {
@@ -191,7 +214,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Inconsolata', monospace ;
+    font-family: 'Dancing Script', cursive;
     font-weight: 500px;
     font-size: larger;
     color: white;
@@ -222,4 +245,103 @@ footer {
 .subhead::first-letter {
     initial-letter: 2em;
     
+}
+
+/* Forms */
+
+.main-form-container {
+    background-image: url('../img/guven-gunes-Iy3GN4iPLW8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-form-container-sign-up {
+    background-image: url('../img/natalia-y-DIewyzpUbRc-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.form-container > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 300px;
+    font-family: 'Indie Flower', cursive !important;
+}
+
+.input-margin {
+    margin-top: 10px;
+    color: inherit;
+    opacity: 0.3;
+    line-height: 30px;
+    padding-left: 10px
+}
+
+.button-form {
+    margin-top: 10px;
+    color: rgba(234, 240, 246, 0.8);
+    font-family: 'Indie Flower', cursive;
+    line-height: 30px;
+    background-color: black;
+    border: none;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.form-footer-container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 20px 0 20px;
+    font-size: smaller;
+}
+
+.form-footer-container-about {
+    display: flex;
+    gap: 5px;
+}
+
+/* post */
+
+.masthead {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-body {
+   padding: 50px;
+   width: 100%;
+   max-width: 500px;
+   margin: 0 auto;
+    
+}
+
+@media (max-with: 600px) {
+    .form-footer-container {
+        font-size: xx-small;
+    }
 }

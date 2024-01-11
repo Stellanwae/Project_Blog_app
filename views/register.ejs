@@ -1,25 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/head') -%>
+<body>
+    <div class="main-form-container-sign-up">
+        <div class="container-register-error">
 
-<div class="container-register-error">
-
-    <% if(errors != null && errors.length > 0) { %>
-        <ul>
-            <% for (let i = 0; i < errors.length; i++) { %>
-                <li class=""><%= errors[i] %></li>
+            <% if(errors != null && errors.length > 0) { %>
+                <ul>
+                    <% for (let i = 0; i < errors.length; i++) { %>
+                        <li class=""><%= errors[i] %></li>
+                    <% } %>
+                </ul>
             <% } %>
-        </ul>
-    <% } %>
-</div>
-<form action="/user/register" method="POST" enctype="multipart/form-data">
-    <div>
-        <label>User Name</label>
-        <input type="text" placeholder="User Name" id="username" name="username">
+        </div>
+        <div class="form-container">
+            <form action="/user/register" method="POST" enctype="multipart/form-data">
+
+                    <input  class="input-margin" type="text" placeholder="User Name" id="username" name="username">
+
+                    <input class="input-margin" type="password" placeholder="Password" id="password" name="password">
+                
+                    <button class="button-form" type="submit" id="sendMessageButton">Register</button>
+
+            </form>       
+        </div>
+        <div class="form-footer-container">
+            <div class="form-footer-container-about">
+                <h3>About Us</h3>
+                <h3>Privacy Policy</h3>
+                <h3>Terms of Use</h3>
+            </div>
+            <div>
+                <h3>©2024 All Rights Reserved | Creative Blogs</h3>
+                
+            </div>
+        </div>
     </div>
-    <div>
-        <label>Password</label>
-        <input type="password" placeholder="Password" id="password" name="password">
-    </div>
-    
-    <div>
-        <button type="submit" id="sendMessageButton">Register</button>
-    </div>
-</form>       
+
+</body>
+</html>
+      

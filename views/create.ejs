@@ -6,7 +6,7 @@
 
     <div class="main">
         <h1>Be Creative today</h1>
-        <p>Let us get to know you</p>
+        <p>It all starts with the stroke of a pen</p>
         <!-- <button>Get Started!</button> -->
     </div>
 
@@ -14,13 +14,12 @@
         <form action="/posts/store" method="POST" enctype="multipart/form-data">
 
             <div>
-                <label for="title">Title</label>
-                <input type="text" name="title" id="title" placeholder="Title">
+                <input type="text" name="title" id="title" placeholder="Your title goes here" style="margin-top: 30px; border:none; padding-left: 30px;">
             </div>
 
             <div>
-                <label for="body">Message</label>
-                <textarea rows="5" type="text" name="body" id="body"></textarea>
+
+                <textarea rows="5" type="text" name="body" id="body" style="padding-left: 30px;"></textarea>
                 <script>
                     $('#body').summernote({
                     placeholder: 'Your content comes here...',
@@ -29,12 +28,12 @@
                     });
                 </script>
             </div>
-            <div>
+            <div style="margin: 30px;">
                 <label>Image</label>
                 <input type="file" id="image" name="image">
             </div>            
-            <div>
-                <button type="submit" id="sendMessageButton">Submit</button>
+            <div style="padding-left: 30px; margin-bottom: 30px;">
+                <button type="submit" id="sendMessageButton" style="color: white; border: none; padding: 7px 30px; background-color: black;">Submit</button>
             </div>
         </form>        
 
