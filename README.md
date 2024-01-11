@@ -25,3 +25,6 @@ To run the application run `npm run dev`
 ## Database setup
 
 `
+Install MongoDB
+Start MongoDB service
+`
